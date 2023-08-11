@@ -45,6 +45,7 @@
         backdrop-filter: blur(5px);
         position: sticky;
         top: 0;
+        z-index: 100;
     }
 
     nav > img {

@@ -45,20 +45,44 @@
             </a>
         </div>
     </section>
-    <section id="logo-showcase-carousel">
-        <p>The next section is coming through</p>
-    </section>   
+    <section id="mengapa-kami">
+        <h2>Mengapa Kami ?</h2>
+        <ul class="poin-mengapa-kami">
+            <li>
+                <h3>1. Kualitas Terjamin</h3>
+                <p>Semua bahan yang kami gunakan adalah bahan yang berkualitas dan telah teruji kebersihan serta keamanannya untuk dikonsumsi</p>
+            </li>
+            <li>
+                <h3>2. Baru Dipanggang</h3>
+                <p>Roti-roti yang kami sajikan merupakan roti yang baru dipanggang dari oven dan disajikan langsung dalam keadaan hangat</p>
+            </li>
+            <li>
+                <h3>3. Lezat & Bervariasi</h3>
+                <p>Kami menyediakan berbagai jenis roti sesuai dengan keinginan pelanggan yang dipadukan dengan kelezatan dan aroma yang khas</p>
+            </li>
+        </ul>
+    </section>
+    <section id="produk-unggulan">
+        Welcome to Produk Unggulan Section
+    </section>
 </div>
 
 <style>
+    .main-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
     #header {
         padding: 3rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.25rem;
-        background-size: 100vw;
+        background-size: cover;
         background-position: top;
+        background-repeat: no-repeat;
     }
     #header .logo-roti-header {
         width: 10vw;
@@ -158,6 +182,52 @@
     .tambahkan-keranjang span {
         font-weight: 500;
         font-size: 1.2rem;
+    }
+
+
+    /* Mengapa Kami Section */
+    /* Mengapa Kami Section */
+    /* Mengapa Kami Section */
+    #mengapa-kami {
+        margin-inline: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #mengapa-kami > h2 {
+        font-family: "Bricolage Grotesque", display;
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .poin-mengapa-kami {
+        display: flex;
+        align-items: strecth;
+        gap: 2rem;
+        list-style-type: none;
+    }
+    .poin-mengapa-kami li {
+        flex: 1;
+        background-color: hsl(43, 55%, 66%);
+        padding: 1rem 1.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    .poin-mengapa-kami li:nth-child(2) {
+        background-color: hsl(46, 100%, 91%);
+    }
+    .poin-mengapa-kami li h3 {
+        font-size: 2rem;
+        font-family: "Bricolage Grotesque", display;
+        font-weight: 700;
+        color: #2F241D;
+    }
+    .poin-mengapa-kami li p {
+        font-size: 1.35rem;
+        color: #2F241D;
     }
 
 </style>
