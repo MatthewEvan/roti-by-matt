@@ -5,7 +5,7 @@
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" >
-	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&family=Dosis:wght@400;500;700&family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Roti by Matt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>

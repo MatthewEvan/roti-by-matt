@@ -36,7 +36,7 @@
 <style>
     nav {
         width: 100%;
-        height: 3.5rem;
+        height: 4rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -65,7 +65,7 @@
         font-weight: 700;
         display: flex;
         align-items: center;
-        height: 3.5rem;
+        height: 4rem;
         padding: 0 1.5rem;
         transition: all 250ms ease-in-out;
         border-left: 0.1rem solid #FEFEFE;
