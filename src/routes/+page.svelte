@@ -5,7 +5,8 @@
     import shoppingCart from 'svelte-awesome/icons/shoppingCart';
     import instagram from 'svelte-awesome/icons/instagram'
     import facebookSquare from 'svelte-awesome/icons/facebookSquare';
-    import githubSquare from 'svelte-awesome/icons/githubSquare'
+    import githubSquare from 'svelte-awesome/icons/githubSquare';
+    import star from 'svelte-awesome/icons/star';
 
 
     //Importing Images
@@ -63,7 +64,32 @@
         </ul>
     </section>
     <section id="produk-unggulan">
-        Welcome to Produk Unggulan Section
+        <div class="produk-tile">
+            <div class="produk-header">
+                <h4>Produk Unggulan Kami</h4>
+                <h3>Roti Boy</h3>
+                <div class="produk-ratings">
+                    <div class="stars-icon">
+                        <Icon data="{star}" scale={1.1} style="color: #FFF844"/>
+                        <Icon data="{star}" scale={1.1} style="color: #FFF844"/>
+                        <Icon data="{star}" scale={1.1} style="color: #FFF844"/>
+                        <Icon data="{star}" scale={1.1} style="color: #FFF844"/>
+                        <Icon data="{star}" scale={1.1} style="color: #FFF844"/>
+                        <span>(152)</span>
+                    </div>
+                    <span>&#x2022;</span>
+                    <div class="produk-penjualan">
+                        <Icon data="{shoppingCart}"/>
+                        <span>(1284+)</span>
+                    </div>
+                </div>
+            </div>
+            <p class="produk-desc">Roti panggang hangat dengan isian krim rasa kopi yang dilengkapi dengan topping berupa krim cokelat yang manis pada bagian atas roti</p>
+        </div>
+        <img src={Image4} alt="Produk Andalan Kami: RotiBoy">
+    </section>
+    <section id="produk-lainnya">
+        Welcome to Produk Lainnya Section
     </section>
 </div>
 
@@ -214,7 +240,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .poin-mengapa-kami li:nth-child(2) {
         background-color: hsl(46, 100%, 91%);
@@ -229,5 +255,74 @@
         font-size: 1.35rem;
         color: #2F241D;
     }
+
+    /* PRODUK UNGGULAN */
+    /* PRODUK UNGGULAN */
+    /* PRODUK UNGGULAN */
+    #produk-unggulan {
+        margin: 1rem 6rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    #produk-unggulan > img {
+        width: 45vw;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 2rem;
+    }
+
+    .produk-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    .produk-tile p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-wrap: balance;
+    }
+
+    .produk-header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .produk-header > h4 {
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+    .produk-header > h3 {
+        font-size: 5rem;
+        font-family: "Bricolage Grotesque", display;
+        letter-spacing: 2px;
+    }
+    .produk-ratings {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .stars-icon {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    .stars-icon span {
+        font-size: 1.15rem;
+        padding-left: 0.5rem;
+    }
+
+    .produk-penjualan {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .produk-penjualan span {
+        font-size: 1.15rem;
+    }
+
+
 
 </style>
