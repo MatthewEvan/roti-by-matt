@@ -101,7 +101,7 @@
         gap: 2rem;
     }
     #header {
-        padding: 3rem 0;
+        padding: 6rem 0 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;

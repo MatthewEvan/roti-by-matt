@@ -13,21 +13,21 @@
             <!-- svelte-ignore a11y-invalid-attribute -->
             <a href="#">
                 <span>ADD TO CART</span>
-                <Icon data="{shoppingCart}" scale={1.1}/>
+                <Icon data="{shoppingCart}" scale={1.3}/>
             </a>
         </li>
         <li>
             <!-- svelte-ignore a11y-invalid-attribute -->
             <a href="#">
                 <span>SIGN UP</span>
-                <Icon data="{userPlus}" scale={1.1}/>
+                <Icon data="{userPlus}" scale={1.3}/>
             </a>
         </li>
         <li>
             <!-- svelte-ignore a11y-invalid-attribute -->
             <a href="#">
                 <span>LOG IN</span>
-                <Icon data="{signIn}" scale={1.1}/>
+                <Icon data="{signIn}" scale={1.3}/>
             </a>
         </li>
     </ul>
@@ -43,7 +43,7 @@
         padding: 1rem 5rem;
         background-color: hsla(23, 36%, 25%, 0.5);
         backdrop-filter: blur(5px);
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 100;
     }
