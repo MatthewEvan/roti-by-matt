@@ -101,8 +101,17 @@
             </div>
         </div>
     </section>
-    <section id="footer">
-        Footer Section
+    <section id="footer-section">
+        <p class="footer-desc">Roti adalah merek tidak resmi dan situs web ini hanyalah prototipe untuk mempromosikan beberapa produk roti dengan cara yang lebih modern daripada melakukannya secara tradisional. Dibuat hanya untuk teks prosedur kompleks. Semua foto dan video diambil secara manual atau dari Unsplash</p>
+        <div class="footer-logos">
+            <img src={LogoRoti} alt="Roti Logo">
+            <img src={LogoRotiInverted} alt="Roti Logo Inverted">
+        </div>
+        <span class="social-logos">
+            <a href="https://github.com/MatthewEvan" target="_blank"><Icon data="{githubSquare}" scale={2} class="github-logo"/></a>
+            <a href="https://www.instagram.com/evano_888/" target="_blank"><Icon data="{instagram}" scale={2} class="instagram-logo"/></a>
+        </span>
+        <p class="trademark">Made by Matthew &#x2022; 2023</p>
     </section>
 </div>
 
@@ -373,6 +382,42 @@
     /* FOOTER */
     /* FOOTER */
     /* FOOTER */
-    
+    #footer-section {
+        padding: 2rem 6rem 1rem;
+        background-color: hsl(23, 21%, 7%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    #footer-section > p {
+        text-wrap: balance;
+        font-size: 1.125rem;
+        color: #CCCCCC;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    .footer-logos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    #footer-section .footer-logos img {
+        width: 5rem;
+    }
+    .social-logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .social-logos a {
+        color: #CCCCCC;
+        transition: all 350ms ease-in-out
+    }
+    .social-logos a:hover, .social-logos a:active{
+        color: #FEFEFE;
+    }
 
 </style>
