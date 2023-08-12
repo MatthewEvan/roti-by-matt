@@ -89,7 +89,20 @@
         <img src={Image4} alt="Produk Andalan Kami: RotiBoy">
     </section>
     <section id="produk-lainnya">
-        Welcome to Produk Lainnya Section
+        <h3>Produk Lainnya</h3>
+        <div class="produk-lainnya-images">
+            <div>
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJlYWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Produk 1">
+                <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JvaXNzYW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Produk 2">
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FuZHdpY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Produk 3">
+                <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNhbmR3aWNofGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Produk 4">
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        Footer Section
     </section>
 </div>
 
@@ -115,14 +128,14 @@
     }
 
     #header > h1 {
-        font-family: "Bricolage Grotesque", display;
+        font-family: "Bricolage Grotesque", sans-serif;
         font-size: 3rem;
         font-weight: 700;
         text-align: center;
         text-wrap: balance;
     }
     #header > h1 span {
-        font-family: "Bricolage Grotesque", display;
+        font-family: "Bricolage Grotesque", sans-serif;
         font-size: 3rem;
         font-weight: 700;
     }
@@ -222,7 +235,7 @@
         gap: 1rem;
     }
     #mengapa-kami > h2 {
-        font-family: "Bricolage Grotesque", display;
+        font-family: "Bricolage Grotesque", sans-serif;
         font-size: 3.5rem;
         font-weight: 700;
     }
@@ -247,7 +260,7 @@
     }
     .poin-mengapa-kami li h3 {
         font-size: 2rem;
-        font-family: "Bricolage Grotesque", display;
+        font-family: "Bricolage Grotesque", sans-serif;
         font-weight: 700;
         color: #2F241D;
     }
@@ -296,7 +309,7 @@
     }
     .produk-header > h3 {
         font-size: 5rem;
-        font-family: "Bricolage Grotesque", display;
+        font-family: "Bricolage Grotesque", sans-serif;
         letter-spacing: 2px;
     }
     .produk-ratings {
@@ -323,6 +336,43 @@
         font-size: 1.15rem;
     }
 
+    /* PRODUK LAINNYA */
+    /* PRODUK LAINNYA */
+    /* PRODUK LAINNYA */
+    #produk-lainnya {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 1rem 5rem;
+    }
+    #produk-lainnya h3 {
+        font-size: 3rem;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-weight: 700;
+    }
+    .produk-lainnya-images, .produk-lainnya-images div {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .produk-lainnya-images div img {
+        width: 20vw;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.25rem;
+        opacity: 0.85;
+        transition: all 350ms ease-in-out;
+    }
+    .produk-lainnya-images div img:hover {
+        opacity: 1;
+        scale: 1.1;
+    }
 
+    /* FOOTER */
+    /* FOOTER */
+    /* FOOTER */
+    
 
 </style>
