@@ -25,14 +25,14 @@
         <h1>
             <span>Melayani</span> dan 
             <span>Menyediakan</span> Berbagai <span>
-            Roti Hangat</span> Langsung dari <span>Oven</span>
+            Roti Hangat</span> Langsung Dipanggang dari <span>Oven</span>
         </h1>
         <div class="image-showcase-header">
             <img src={Image1} alt="Produk Roti 1">
             <img src={Image2} alt="Produk Roti 2">
             <img src={Image3} alt="Produk Roti 3">
         </div>
-        <h2>Roti yang hangat dan harum, dipadukan dengan kelezatan yang telah teruji kualitasnya. Roti-roti yang bervariasi sesuai keinginandan permintaan berbagai pelanggan kami. Hanya tersedia di Roti</h2>
+        <h2>Roti yang hangat dan harum, dipadukan dengan kelezatan dan berbagai bahan yang telah teruji kualitasnya. Roti-roti yang bervariasi sesuai keinginan dan permintaan berbagai pelanggan kami. Hanya tersedia di Roti</h2>
         <div class="cta-buttons">
             <!-- svelte-ignore a11y-invalid-attribute -->
             <a href="#" class="pesan-sekarang">
@@ -123,7 +123,7 @@
         gap: 2rem;
     }
     #header {
-        padding: 6rem 0 3rem;
+        padding: 6rem 6rem 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -169,8 +169,8 @@
         border-top: 0.2rem solid #FEFEFE;
     }
     .image-showcase-header > img {
-        width: 13vw;
-        aspect-ratio: 5/3;
+        width: 18vw;
+        aspect-ratio: 5/2.5;
         object-fit: cover;
         border-radius: 0.25rem;
         opacity: 0.8;
@@ -360,7 +360,8 @@
         font-family: "Bricolage Grotesque", sans-serif;
         font-weight: 700;
     }
-    .produk-lainnya-images, .produk-lainnya-images div {
+    .produk-lainnya-images,
+    .produk-lainnya-images div {
         display: flex;
         align-items: center;
         gap: 1.5rem;
@@ -388,20 +389,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
     #footer-section > p {
         text-wrap: balance;
         font-size: 1.125rem;
         color: #CCCCCC;
         text-align: center;
-        margin-bottom: 0.25rem;
     }
     .footer-logos {
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1.25rem;
+        margin-bottom: 0.75rem;
     }
     #footer-section .footer-logos img {
         width: 5rem;
@@ -420,4 +420,104 @@
         color: #FEFEFE;
     }
 
+    /* RESPONSIVE CODE */
+    /* RESPONSIVE CODE */
+    /* RESPONSIVE CODE */
+    @media screen and (max-width: 1024px) {
+        #header {
+            padding: 6rem 4rem 3rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        #header {
+            padding: 6rem 2rem 3rem;
+        }
+        .image-showcase-header {
+            flex-direction: column;
+        }
+        .image-showcase-header > img {
+            width: 50vw;
+            aspect-ratio: 5/1.75;
+            border-radius: 0.5rem;
+        }
+        .cta-buttons {
+            flex-direction: column;
+        }
+
+        /* MENGAPA KAMI */
+        #mengapa-kami {
+            margin-inline: 3rem;
+        }
+        .poin-mengapa-kami {
+            flex-direction: column
+        }
+
+        /* PRODUK UNGGULAN KAMI */
+        #produk-unggulan {
+            flex-direction: column;
+            margin: 1rem 3rem;
+        }
+        #produk-unggulan > img {
+            width: 80vw;
+            aspect-ratio: 2/0.75
+        }
+        .produk-tile {
+            flex-direction: row;
+            padding: 0 4rem 0;
+            align-items: center;
+        }
+        .produk-header {
+            flex: 1;
+        }
+        .produk-tile > p {
+            flex: 1;
+        }
+        .produk-header > h3 {
+            font-size: 3.5rem;
+        }
+
+        /* PRODUK LAINNYA  */
+        #produk-lainnya {
+            margin: 1rem 3rem;
+        }
+        .produk-lainnya-images {
+            flex-direction: column;
+        }
+        .produk-lainnya-images div img {
+            width: 40vw;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        /* HEADER HEADER  */
+        #header .logo-roti-header {
+            width: 20vw;
+        }
+        /* PRODUK UNGGULAN KAMI */
+        .produk-tile {
+            flex-direction: column;
+            padding: 0 2rem 0;
+            align-items: start;
+        }
+        #produk-unggulan > img {
+            aspect-ratio: 2/1.25
+        }
+        .produk-header .produk-ratings {
+            flex-direction: column;
+            align-items: start;
+        }
+        .produk-ratings > span {
+            display: none;
+        }
+
+        /* PRODUK LAINNYA  */
+        .produk-lainnya-images div {
+            flex-direction: column;
+        }
+        .produk-lainnya-images div img {
+            width: 75vw;
+            border-radius: 0.75rem;
+            aspect-ratio: 2/1;
+        }
+    }
 </style>

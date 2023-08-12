@@ -80,5 +80,19 @@
     nav ul li a span {
         padding-right: 0.5rem;
     }
-
+    @media screen and (max-width: 1024px) {
+        nav {
+            padding: 1rem 3rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        nav ul li a span {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        nav {
+            padding: 1rem 2rem;
+        }
+    }
 </style>
